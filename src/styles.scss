@@ -4,8 +4,16 @@
 @use "igniteui-angular/theming" as *;
 
 @include core();
-@include typography($font-family: "Open Sans", $type-scale: $fluent-type-scale);
-@include fluent-light-theme($light-fluent-word-palette);
+@include typography($font-family: "Roboto", $type-scale: $bootstrap-type-scale);
+
+$custom-palette: palette(
+  $primary: #007bff,
+  $secondary: #6c757d,
+  $surface: #f8f9fa,
+  $success: #28a745,
+  $info: #17a2b8,
+  $variant: 'bootstrap');
+@include bootstrap-light-theme($custom-palette);
 
 body {
   background: var(--ig-surface-500);
