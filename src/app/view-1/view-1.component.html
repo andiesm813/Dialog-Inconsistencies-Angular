@@ -1,0 +1,25 @@
+<div class="column-layout group">
+  <button igxButton="contained" type="button" igxRipple (click)="dialog.toggle()" class="button">
+    Button
+  </button>
+  <igx-dialog [closeOnOutsideSelect]="true" #dialog>
+    <igx-dialog-title>
+      <h5>
+        Confirmation
+      </h5>
+    </igx-dialog-title>
+    <ng-container>
+      <p class="text">
+        This is a simple custom dialog
+      </p>
+    </ng-container>
+    <igx-dialog-actions>
+      <button igxButton="flat" type="button" igxRipple class="button">
+        Button
+      </button>
+      <button igxButton="contained" type="button" igxRipple class="button">
+        Button
+      </button>
+    </igx-dialog-actions>
+  </igx-dialog>
+</div>
